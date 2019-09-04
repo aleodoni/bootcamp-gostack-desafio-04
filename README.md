@@ -1,3 +1,3 @@
 # bootcamp-gostack-desafio-04
 
-![Captura de tela](assets/captura.png)
+![Captura de tela](assets/tela.png)
