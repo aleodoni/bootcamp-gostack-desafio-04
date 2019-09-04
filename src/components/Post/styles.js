@@ -18,12 +18,18 @@ export const Container = styled.div`
     align-items: center;
   }
 
-  .header .avatar {
+  .avatar {
     height: 32px;
     width: 32px;
     border-radius: 50%;
     min-height: 32px;
     min-width: 32px;
+  }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: #eeeeee;
   }
 
   .header .info {
@@ -43,6 +49,30 @@ export const Container = styled.div`
 
   .content {
     margin-top: 15px;
+    margin-bottom: 15px;
     font-size: 14px;
+  }
+
+  .comments {
+    margin-top: 20px;
+  }
+
+  .comment {
+    margin-top: 20px;
+    display: flex;
+  }
+
+  .comment p {
+    width: 100%;
+    border-radius: 20px;
+    background: #dddddd;
+    margin-left: 10px;
+    padding: 15px;
+    font-size: 13px;
+  }
+
+  .comment span {
+    font-weight: bold;
+    margin-right: 6px;
   }
 `;

@@ -14,8 +14,21 @@ function Header({ author, date }) {
   );
 }
 
-function Comments() {
-  return <div />;
+function Comments({ comments }) {
+  return (
+    <div className="comments">
+      <div className="divider"></div>
+      {comments.map(comment => (
+        <div key={comment.id} className="comment">
+          <img className="avatar" src={comment.author.avatar} />
+          <p>
+            <span>{comment.author.name}</span>
+            {comment.content}
+          </p>
+        </div>
+      ))}
+    </div>
+  );
 }
 
 function Post({ author, date, content, comments }) {
@@ -23,7 +36,7 @@ function Post({ author, date, content, comments }) {
     <Container>
       <Header author={author} date={date} />
       <p className="content">{content}</p>
-      <Comments />
+      <Comments comments={comments} />
     </Container>
   );
 }
